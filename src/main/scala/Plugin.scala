@@ -1,10 +1,10 @@
 import gitbucket.core.service.SystemSettingsService
-import gitbucket.gist.controller.GistController
 import gitbucket.core.plugin.PluginRegistry
 import gitbucket.core.util.Version
 import java.io.File
 import javax.servlet.ServletContext
 import gitbucket.gist.util.Configurations._
+import gitbucket.kanban.controller.KanbanController
 
 class Plugin extends gitbucket.core.plugin.Plugin with SystemSettingsService {
   override val pluginId: String = "kanban"
